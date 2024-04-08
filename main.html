@@ -61,24 +61,31 @@
       </iframe>
 
 
-      <h4><small>RECENT POSTS</small></h4>
+      <h4><small>MOTIVATION BLOCK</small></h4>
       <hr>
-      <h2>Officially Blogging</h2>
-      <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
-      <h5><span class="label label-success">Lorem</span></h5><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h2>JEE MOTIVATION</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Developer Sujith on 8 April, 2024</h5>
+      <h5><span class="label label-success">#JEE</span></h5><br>
+      <p>
+JEE aspirants must have confidence in their knowledge and hard work. A sincere JEE aspirants inculcate smart work in their preparation for the best result. As said by Eleanor Roosevelt, “The future belongs to those who believe in the beauty of their dreams.”</p>
       <hr>
 
-      <h4>Leave a Comment:</h4>
+      <h4>Leave a Feedback:</h4>
       <form role="form">
         <div class="form-group">
-          <textarea class="form-control" rows="3" required></textarea>
+          <textarea class="form-control" rows="3" required id="myInput"></textarea>
         </div>
-        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="submit" onclick="myFunction()" class="btn btn-success">Submit</button>
+        <script>
+function myFunction() {
+  alert("I am an alert box!");
+  document.getElementById('myInput').value = ''
+}
+</script>
       </form>
       <br><br>
 
-      <p><span class="badge">2</span> Comments:</p><br>
+      <p><span class="badge">VGT Sponsored</span></p><br>
         </div>
       </div>
     </div>
