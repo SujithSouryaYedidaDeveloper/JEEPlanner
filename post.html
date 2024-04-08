@@ -1,0 +1,63 @@
+<html>
+<head>
+          <title>JEE Planner - TO-DO</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="icon" href="vango-icon.ico">
+	<style>
+        body{
+            background-image: linear-gradient(#b5b5b5, 	#888888);
+        }
+        input[type=text], select {
+          width: 50%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+
+	</style>
+</head>
+<body>
+
+    <div class="jumbotron text-center">
+  <h1><img src="vango-icon.ico"> JEE Planner</h1><br>
+  <br>
+  <div class="alert alert-danger" role="alert">
+  <ul id="cars"><hr></ul>
+</div>
+        <br>
+    <input type = "text" id = "carName" placeholder="Tasks to do..." aria-describedby="basic-addon1" />
+        <br><br><br>
+    <button onclick = "addCar()" class="btn btn-success"> Add Task </button>
+        <br><br>
+    <button onclick = "removeCar()" class="btn btn-danger"> Remove </button>
+    <script>
+        var carList = document.getElementById("cars");
+        var carName = document.getElementById("carName");
+        var current_time = date.getHours()+":"+date.getMinutes()+":"+ date.getSeconds();
+        function addCar() {
+            var li = document.createElement("li");
+            li.setAttribute('id', carName.value);
+            let text = document.createTextNode(carName.value);
+            li.appendChild(text);
+
+            carList.appendChild(li);
+
+        }
+        function removeCar() {
+            var item = document.getElementById(carName.value);
+            carList.removeChild(item);
+        }
+    </script>
+<br>
+</div>
+
+
+</body>
+</html>
